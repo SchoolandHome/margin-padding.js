@@ -25,6 +25,12 @@
 <script src="https://cdn.schoolandhome.ru/libs/@current/margin-padding.js"></script>
 ```
 
+или 
+
+```html 
+npm i margin-padding.js
+```
+
 
 2. Добавьте атрибуты data-margin и/или data-padding к элементам
 Для применения отступов или внутренних отступов к элементам, добавьте соответствующие атрибуты:
