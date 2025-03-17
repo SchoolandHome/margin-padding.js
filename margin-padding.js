@@ -11,9 +11,9 @@ class MarginPadding {
         document.querySelectorAll("[data-margin]").forEach(element => {
             const marginValue = element.getAttribute("data-margin");
             if (marginValue) {
-                const parts = marginValue.match(/(top|right|bottom|left|x|y)?\s*(-?\d*\.?\d+)(px|rem|em)/);
-                if (parts) {
-                    let [, axis, value, unit] = parts;
+                const parts = marginValue.matchAll(/(top|right|bottom|left|x|y)?\s*(-?\d*\.?\d+)(px|rem|em)/g);
+                for (const match of parts) {
+                    let [, axis, value, unit] = match;
                     const cssValue = `${value}${unit}`;
                     
                     if (!axis) {
@@ -40,9 +40,9 @@ class MarginPadding {
         document.querySelectorAll("[data-padding]").forEach(element => {
             const paddingValue = element.getAttribute("data-padding");
             if (paddingValue) {
-                const parts = paddingValue.match(/(top|right|bottom|left|x|y)?\s*(-?\d*\.?\d+)(px|rem|em)/);
-                if (parts) {
-                    let [, axis, value, unit] = parts;
+                const parts = paddingValue.matchAll(/(top|right|bottom|left|x|y)?\s*(-?\d*\.?\d+)(px|rem|em)/g);
+                for (const match of parts) {
+                    let [, axis, value, unit] = match;
                     const cssValue = `${value}${unit}`;
                     
                     if (!axis) {
