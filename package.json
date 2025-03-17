@@ -1,0 +1,12 @@
+{
+  "name": "margin-padding.js",
+  "version": "1.0.1",
+  "description": "MarginPadding is a lightweight JavaScript library that automatically applies margin and padding to HTML elements based on data-margin and data-padding attributes. It supports the x and y axes, as well as multiple values at once. Simplifies working with spacing without the need for CSS.",
+  "main": "margin-padding.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["html", "CSS", "CSS3", "margin", "padding", "js"],
+  "author": "School&Home",
+  "license": "ISC"
+}
